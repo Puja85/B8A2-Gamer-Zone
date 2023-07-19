@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+   
     max-width: 1430px;
 }
 .nav-container{
@@ -33,7 +33,6 @@
     display: flex;
     max-height:670px ;
     justify-content: space-between;
-    align-items: center;
     background-color: rgb(254, 237, 250);
    
 }
@@ -47,6 +46,9 @@
     font-size: 85px;
     margin: 30px;
     padding-left: 0px;
+    background-image: linear-gradient(to bottom, rgb(249, 9, 125),rgb(52, 34, 248));
+    color: transparent;
+    -webkit-background-clip: text;
    
 }
 .btn-1{
@@ -73,6 +75,10 @@
     
     font-size: 48px;
     font-weight: 700;
+    background-image: linear-gradient(to bottom, rgb(249, 9, 125),rgb(52, 34, 248));
+    color: transparent;
+    -webkit-background-clip: text;
+   
 
 }
 .bunas-item-container {
@@ -86,4 +92,39 @@
 .bunas-item-container h5{
    font-size: 30px;
    margin: 0px;
+}
+.bunas-container img{
+    width: 868px;
+    height: 489px;
+}
+.online-title{
+    display:flex;
+    justify-content: center;
+}
+.online-items{
+    display: flex;
+    justify-content: center;
+}
+.online-container{
+    justify-content: center;
+   
+}
+.online-items img{
+    width: 200px;
+    margin-right: 20px;
+}
+/*responsive part*/
+@media screen  and  (max-width:400px){
+    .nav-container{
+        flex-direction: column;
+    }
+    .logo-container {
+        flex-direction: column;
+    }
+    .nav-items-container a{
+        margin-top: 2px;
+    }
+}
+.banner-section{
+    flex-direction: column;
 }
